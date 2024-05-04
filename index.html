@@ -23,10 +23,10 @@
       container: 'map',
       style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=cDbFV79CbbPAYh3hOnSW',
       attributionControl: false,
-      center: [-79.9201963955594, 43.262272574577686],
+      center: [-79.92051184179995, 43.26181310125515],
       zoom: 16,
-      pitch: 45,
-      bearing: 0
+      pitch: 60,
+      bearing: -45
     });
 
     map.addControl(new maplibregl.AttributionControl({
@@ -53,7 +53,7 @@
           {"type": "Feature",
           "geometry":{
             "type": "Point", 
-            "coordinates": [-79.9201963955594, 43.262272574577686]},
+            "coordinates": [-79.92051184179995, 43.26181310125515]},
           "properties":{
 
            }
@@ -74,14 +74,14 @@
                   [22, 240]
                 ]
              },
-            'circle-color': '#1f78b4'
+            'circle-color': '#7a003c'
         }
     });
 
-    let coordinates = [-79.9201963955594, 43.262272574577686];
+    let coordinates = [-79.92051184179995, 43.26181310125515];
     let description = 
       '<div class="popup">' + 
-      'McMaster University' +
+      'Burke Science Building (BSB)' + '<br>' + 'McMaster University' +
       '</div>';
 
       // Display popups on click
